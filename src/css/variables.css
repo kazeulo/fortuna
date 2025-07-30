@@ -2,7 +2,7 @@
 :root {
     --primary-color: #ffffff; 
     --secondary-color: #dee7ff;
-    --tertiary-color: #f8bfff;
+    --tertiary-color: #ed9ef8;
 }
 
 :root {
@@ -26,6 +26,9 @@ p, i {
 }
 
 /* buttons */
-button{
-    cursor: pointer;
+
+.primary-button {
+    background-color: #ed9ef8;
+    color: black;
+    border: none;
 }
