@@ -1,3 +1,13 @@
 .navbar{
-    background-color: white;
+    background: white;
+    padding: 15px 0;
+}
+
+.navbar .brandName{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .links{
+    font-size: 1rem;
 }

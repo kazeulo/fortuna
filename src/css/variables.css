@@ -1,0 +1,31 @@
+/* global variables */
+:root {
+    --primary-color: #ffffff; 
+    --secondary-color: #dee7ff;
+    --tertiary-color: #f8bfff;
+}
+
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+}
+
+p, i {
+ font-family: var(--secondary-font);
+}
+
+/* buttons */
+button{
+    cursor: pointer;
+}
