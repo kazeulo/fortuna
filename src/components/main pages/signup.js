@@ -3,11 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+import '../../css/main pages/signup.css';
+
 const Signup = () => {
 
     return (
         <Container>
-            <Form>
+            <Form className="userAuth-form mx-auto">
                 <div className="d-flex gap-3">
                     <Form.Group className="mb-3" controlId="email">
                         <Form.Label>First Name</Form.Label>

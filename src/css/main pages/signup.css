@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(235, 235, 235) !important;
+    display: flex;
+    justify-content: center;
+}
+
+.userAuth-form{
+    min-width: 400px;
+    width: 500px;
+    background-color: white;
+    padding: 30px 20px;
+}

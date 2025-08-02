@@ -6,7 +6,8 @@ import './css/variables.css';
 // import Header from './components/partials/header';
 
 // main pages
-import Signup from './components/main pages/signup';
+import Home from './components/main pages/home';
+// import Signup from './components/main pages/signup';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       {/* <Spinner animation="grow" /> */}
       {/* <Header /> */}
-      <Signup />
+      <Home />
     </div>
   );
 }
