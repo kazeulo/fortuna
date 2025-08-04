@@ -1,4 +1,40 @@
-body{
-    margin: 0;
-    padding: 0;
+.sidebar{
+    height: 100%;
+    width: 250px;
+    background-color: #6c4573;
 }
+
+.sidebar-list{
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-list .item{
+    width: 100%;
+    height: 60px;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.sidebar-list .item:hover{
+    cursor: pointer;
+    background-color: #46204c;
+}
+
+.item #icon{
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.item #title{
+    flex: 70%;
+}
+

@@ -2,20 +2,17 @@
 import './css/variables.css';
 // import Spinner from 'react-bootstrap/Spinner';
 
-// partials
-// import Header from './components/partials/header';
-
 // main pages
-import Home from './components/main pages/home';
+// import Home from './components/main pages/home';
+import Sidebar from './components/partials/sidebar';
 // import Signup from './components/main pages/signup';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Spinner animation="grow" /> */}
-      {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
+      <Sidebar />
     </div>
   );
 }

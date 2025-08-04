@@ -1,17 +1,28 @@
-import React from 'react';
+// import React, { useState } from 'react';
 
+// styling
 import '../../css/partials/sidebar.css';
+import '../../App.css'
+
+import {SidebarData} from './sidebarData';
 
 const Sidebar = () => { 
-    return (
-        <div className='container-fluid'>
-            <div className='row'>
-                <div className='col-auto col-sm-2 bg-dark d-flex flex-column justify-content-between min-v100'>
-                    <p className='text-white'>This is the side bar</p>
-                </div>
-            </div>
-        </div>
-    )
+
+  return (
+    <div className="sidebar">
+        <ul className='sidebar-list'> {
+            SidebarData.map((val, key) =>{
+                return (
+                    <li key={key} className='item' onClick = {() => {window.location.pathname = val.link}}> 
+                        <div id="icon">{val.icon}</div>
+                        <div id="title">{val.title}</div>
+                    </li>
+                );
+            })
+            
+        } </ul>
+    </div>
+  )
 }
 
 export default Sidebar;
