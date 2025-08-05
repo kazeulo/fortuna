@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    padding: 30px 60px; 
+    justify-content: space-between;
+}
+
+.brandName{
+    font-size: 2.2rem;
+    font-weight: 700;
+}

@@ -1,8 +1,8 @@
 /* global variables */
 :root {
-    --primary-color: #ffffff; 
+    --primary-color: #9b42a1; 
     --secondary-color: #dee7ff;
-    --tertiary-color: #ed9ef8;
+    --tertiary-color: #591863;
 }
 
 :root {
@@ -27,8 +27,22 @@ p, i, li {
 
 /* buttons */
 
-.primary-button {
-    background-color: #ed9ef8;
-    color: black;
+button{
     border: none;
+    font-size: 0.8rem;
+    border-radius: 30px !important;
+    padding: 5px 20px;
+    font-family: var(--secondary-font);
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    margin: 0 10px;
+}
+
+.primary-button:hover{
+    background-color: var(--tertiary-color);
+    transition: all 0.5s ease;
 }
