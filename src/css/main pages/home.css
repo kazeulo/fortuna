@@ -5,6 +5,31 @@
 }
 
 .brandName{
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
+}
+
+.banner{
+    text-align: center;
+}
+
+.authenticationButtons .log-in{
+    background-color: transparent;
+    color: white;
+}
+
+.authenticationButtons .log-in:hover{
+    color: var(--primary-color);
+    transition: all ease 0.5s;
+    font-weight: 500;
+}
+
+.authenticationButtons .register{
+    background-color: white;
+    color: var(--tertiary-color);
+}
+
+.authenticationButtons .register:hover{
+    background-color: var(--secondary-color);
+    transition: all ease 0.5s;
 }
