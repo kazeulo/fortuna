@@ -5,15 +5,28 @@
 }
 
 .brandName{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
 .banner{
+    margin: 30px 0;
     text-align: center;
 }
 
+.banner .brandLine{
+    font-size: 2rem;
+    margin: 15px;
+    font-weight: 600;
+}
+
+.banner .brandLine-subtitle{
+    font-size: 1rem; 
+    color: #c6c6c6;
+}
+
 .authenticationButtons .log-in{
+    font-weight: 500;
     background-color: transparent;
     color: white;
 }
@@ -21,7 +34,6 @@
 .authenticationButtons .log-in:hover{
     color: var(--primary-color);
     transition: all ease 0.5s;
-    font-weight: 500;
 }
 
 .authenticationButtons .register{
@@ -30,6 +42,7 @@
 }
 
 .authenticationButtons .register:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: white;
     transition: all ease 0.5s;
 }

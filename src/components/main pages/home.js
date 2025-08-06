@@ -18,7 +18,7 @@ const Home = () => {
                         <button className="log-in">Log in</button>      
                     </Link>
 
-                    <Link to="/login">
+                    <Link to="/signup">
                      <button className="register">Register</button>
                     </Link>
                     
@@ -26,8 +26,8 @@ const Home = () => {
             </div>
 
             <div className="banner">
-                <h1>Grow your money.</h1>
-                <h3>Lorem ipsum or some text here.</h3>
+                <h1 className='brandLine'>Master Your Money with Total Clarity.</h1>
+                <h3 className='brandLine-subtitle'>Track your savings, spending, and investments — all in one powerful, easy-to-use dashboard.</h3>
             </div>
         </div>   
     )
