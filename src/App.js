@@ -14,7 +14,6 @@ import Signup from './components/main pages/signup';
 // styling
 import './css/variables.css';
 
-
 function App() {
   return (
     <>

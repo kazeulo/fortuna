@@ -2,14 +2,20 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
-import '../../css/main pages/signup.css';
+import '../../css/main pages/userAuth.css';
 
 const Signup = () => {
 
     return (
         <Container>
+            <Link to="/">
+                <button className="back-btn my-4">Back</button>
+            </Link>
+
             <Form className="userAuth-form mx-auto">
+                <h2 className="text-center mb-3">Sign Up</h2>
                 <div className="d-flex gap-3">
                     <Form.Group className="mb-3" controlId="email">
                         <Form.Label>First Name</Form.Label>
