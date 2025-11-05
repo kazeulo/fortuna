@@ -1,6 +1,4 @@
 // import React, { useState } from 'react';
-
-// styling
 import '../../css/partials/sidebar.css';
 import '../../App.css';
 import '../../css/variables.css';
