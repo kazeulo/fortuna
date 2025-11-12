@@ -33,19 +33,19 @@ p, i, li {
 button{
     border: none;
     font-size: 0.9rem;
-    border-radius: 30px !important;
+    border-radius: 40px !important;
     padding: 5px 20px;
     font-family: var(--primary-font);
 }
 
 .primary-button {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
     color: white;
-    border: none;
+    border: none !important;
     margin: 0 10px;
 }
 
 .primary-button:hover{
-    background-color: var(--tertiary-color);
+    background-color: var(--tertiary-color) !important;
     transition: all 0.5s ease;
 }

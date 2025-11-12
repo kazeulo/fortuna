@@ -19,7 +19,7 @@ const Signup = () => {
 
       {/* Centered Signup Form */}
       <Form className="userAuth-form w-100" style={{ maxWidth: "500px" }}>
-        <h2 className="text-center mb-3">Sign Up</h2>
+        <h2 className="text-center mb-3 primary-font">Sign Up</h2>
 
         <div className="d-flex gap-3">
           <Form.Group className="mb-3 flex-fill" controlId="firstName">

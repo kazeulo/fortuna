@@ -18,7 +18,7 @@ const Login = () => {
       </Link>
 
       <Form className="userAuth-form w-100" style={{ maxWidth: "500px" }}>
-        <h2 className="text-center mb-3">Log In</h2>
+        <h2 className="text-center mb-3 primary-font">Log In</h2>
 
         <Form.Group className="mb-3" controlId="email">
           <Form.Label>Email Address</Form.Label>
