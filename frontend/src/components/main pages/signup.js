@@ -47,10 +47,12 @@ const Signup = () => {
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control type="password" placeholder="Re-enter password" />
         </Form.Group>
-
-        <Button type="submit" className="primary-button w-100 mt-3">
-          Submit
-        </Button>
+      
+        <Link to="/dashboard">
+          <Button type="submit" className="primary-button w-100 mt-3">
+            Submit
+          </Button>
+        </Link>
       </Form>
     </Container>
   );

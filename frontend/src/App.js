@@ -10,6 +10,7 @@ import Home from './components/main pages/home';
 import Sidebar from './components/partials/sidebar';
 import Login from './components/main pages/login';
 import Signup from './components/main pages/signup';
+import Dashboard from './components/main pages/dashboard'
 
 // styling
 import './css/variables.css';
@@ -26,9 +27,14 @@ function App() {
           />
 
           <Route
+            path='dashboard'
+            element={<Dashboard />}
+          />
+
+          <Route
             path='sidebar'
             element={<Sidebar />}
-          />
+          />s
 
           <Route
             path='/login'
