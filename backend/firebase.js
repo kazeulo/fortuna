@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAJaU8tbd_pVvwWS-DAwpW6brajF62VKcE",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "fortuna-d3d82.firebaseapp.com",
   projectId: "fortuna-d3d82",
   storageBucket: "fortuna-d3d82.firebasestorage.app",
