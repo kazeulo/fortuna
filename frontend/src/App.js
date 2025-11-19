@@ -9,10 +9,10 @@ import {
 import Home from './components/main pages/home';
 import Login from './components/main pages/login';
 import Signup from './components/main pages/signup';
-import Dashboard from './components/main pages/dashboard'
-
+import Dashboard from './components/main pages/Dashboard';
 // styling
 import './css/variables.css';
+import CustomSidebar from './components/partials/Sidebar';
 
 function App() {
   return (
@@ -26,8 +26,13 @@ function App() {
           />
 
           <Route
-            path='dashboard'
+            path='/dashboard'
             element={<Dashboard />}
+          />
+
+          <Route
+            path='/sidebar'
+            element={<CustomSidebar />}
           />
 
           <Route

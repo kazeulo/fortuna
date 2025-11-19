@@ -3,3 +3,7 @@
     font-family: var(--secondary-font) !important;
     font-size: 12 em;
 }
+
+.sidebar.ps-sidebar {
+    border-right: none !important;
+}
