@@ -6,9 +6,9 @@ import {
 } from 'react-router-dom';
 
 // main pages
-import Home from './components/main pages/home';
-import Login from './components/main pages/login';
-import Signup from './components/main pages/signup';
+import Home from './components/main pages/Home';
+import Login from './components/main pages/Login';
+import Signup from './components/main pages/Signup';
 import Dashboard from './components/main pages/Dashboard';
 // styling
 import './css/variables.css';

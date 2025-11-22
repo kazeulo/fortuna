@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
 
 import HomeIcon from "@mui/icons-material/Home";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
@@ -12,7 +12,7 @@ import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import { Box, Typography, IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 
-import '../../css/partials/sidebar.css';
+import "../../css/partials/sidebar.css";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   return (
@@ -29,6 +29,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 
 const CustomSidebar = () => {
   const [selected, setSelected] = useState("Dashboard");
+
   const { collapseSidebar, toggleSidebar, collapsed, broken } = useProSidebar();
 
   return (
@@ -54,18 +55,16 @@ const CustomSidebar = () => {
       <Sidebar
         breakPoint="md"
         backgroundColor="var(--dark-color)"
-        className="sidebar"
+        className="sidebar vh-100"
       >
         <Menu>
           {/* Collapse Button */}
           <MenuItem
             icon={
               collapsed ? (
-                <MenuOutlinedIcon onClick={collapseSidebar} />
+                <MenuOutlinedIcon onClick={() => collapseSidebar(false)} />
               ) : (
-                <CloseOutlinedIcon
-                  onClick={broken ? toggleSidebar : collapseSidebar}
-                />
+                <CloseOutlinedIcon onClick={() => collapseSidebar(true)} />
               )
             }
             style={{ margin: "10px 0 20px 0" }}
@@ -77,21 +76,15 @@ const CustomSidebar = () => {
                 alignItems="center"
                 ml="10px"
               >
-                <Typography variant="h4" color="#fff">
-                  Finance
-                </Typography>
-                <IconButton
-                  onClick={broken ? toggleSidebar : collapseSidebar}
-                >
-                  <CloseOutlinedIcon />
-                </IconButton>
+                {/* <Typography variant="h4" color="#fff">
+                  fortuna
+                </Typography> */}
               </Box>
             )}
           </MenuItem>
 
           {/* MENU ITEMS */}
           <Box paddingLeft={collapsed ? undefined : "10%"}>
-
             <Item
               title="Dashboard"
               to="/"
@@ -123,7 +116,6 @@ const CustomSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
           </Box>
         </Menu>
       </Sidebar>
